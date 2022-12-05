@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:iconTint="@color/pink"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="listview"
+        android:id="@+id/toolbarsreach">
+    </item>
+    <item
+        android:iconTint="@color/pink"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="profile"
+        android:id="@+id/toolbarprofile">
+    </item>
+    <item
+        android:iconTint="@color/pink"
+
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="profile"
+        android:id="@+id/toolbarprofile1">
+    </item>
+
+</menu>

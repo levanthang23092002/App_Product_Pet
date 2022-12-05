@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thiên đường dành cho thú cưng"
+            android:textColor="#434343"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ tên"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="2dp"
+            android:textColor="#434343"/>
+        <EditText
+            android:id="@+id/txt_ntt_hoten"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:hint="Họ và Tên"
+            android:background="@drawable/boder"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="giới Tính"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#434343"/>
+
+        <Spinner
+            android:id="@+id/cbb_ntt_gtinh"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:entries="@array/gt"
+            android:prompt="@string/gioitinh" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="Ngày sinh"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#434343"/>
+        <EditText
+            android:id="@+id/txt_ntt_ngaysinh"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:inputType="date"
+            android:textColor="#000000"
+            android:background="@drawable/boder"
+            android:hint="23/09/2002"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#434343"/>
+        <Spinner
+            android:id="@+id/txt_ntt_diachi"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:entries="@array/country_arrays"
+            android:prompt="@string/country_prompt" />
+        <Button
+            android:id="@+id/btn_ntt_xacnhan"
+
+            android:layout_marginTop="25dp"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/boderbutton"
+            android:layout_gravity="center"
+            android:text="Xác Nhận"
+            android:textStyle="bold"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:id="@+id/txt_ntt_trove"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở về"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textColor="#434343"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="#434343"
+            android:layout_marginTop="-4dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>

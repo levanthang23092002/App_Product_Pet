@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/txt_dfinish_mota"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/finish"/>
+
+
+
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btn_dfinish_exit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/exit"/>
+        <LinearLayout
+            android:layout_below="@+id/txt_dfinish_mota"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:id="@+id/txt_dialog_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="#434343"
+                android:text="Bạn cần nhập đầy đủ thông tin"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

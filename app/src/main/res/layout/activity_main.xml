@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thiên đường dành cho thú cưng"
+                android:textColor="#434343"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+
+            <EditText
+                android:id="@+id/txtsdt"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="Số Điện Thoại"
+                android:inputType="number"
+                android:maxLength="11"
+                android:background="@drawable/boder"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtmatkhau"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/boder"
+                    android:hint="Mật Khẩu"/>
+                <EditText
+                    android:id="@+id/txtnhapmatkhaulai"
+                    android:layout_marginTop="90dp"
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/boder"
+                    android:hint="Nhập Lại Mật Khẩu"/>
+            </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btndangki"
+
+                android:layout_marginTop="25dp"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/boderbutton"
+                android:layout_gravity="center"
+                android:text="Đăng Kí"
+                android:textStyle="bold"
+                android:textSize="19dp"/>
+            <TextView
+                android:id="@+id/txtDangnhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng Nhập"
+                android:textSize="19dp"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="#434343"/>
+            <View
+                android:layout_marginTop="-4dp"
+                android:layout_gravity="center"
+                android:layout_width="92dp"
+                android:layout_height="1dp"
+                android:background="#434343"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <View
+                        android:layout_marginLeft="80dp"
+                        android:layout_width="90dp"
+                        android:layout_height="3dp"
+                        android:background="#341111"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hoặc"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#434343"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <View
+                        android:layout_marginRight="40dp"
+                        android:layout_width="90dp"
+                        android:layout_height="3dp"
+                        android:background="#341111"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageButton
+                    android:id="@+id/btnfacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logos_facebook"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="100dp"/>
+                <ImageButton
+                    android:id="@+id/btnemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logoemail"
+                    android:backgroundTint="#ffffff"
+                    android:layout_marginLeft="105dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+

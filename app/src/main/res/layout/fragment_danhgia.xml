@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".danhgia">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="Đánh giá của tôi"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/anh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="90dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/logo1"
+                        android:textColor="#434343"
+                        android:textSize="20dp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_danhgia_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/anh"
+                android:text="Hồ Thị Ái Thi"
+                android:textColor="#D85F9F"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_danhgia_name"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/anh">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/star1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/star2"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/star3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/star4"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/star5"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_star" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/starof1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_starmenu" />
+
+                        <ImageView
+                            android:id="@+id/starof2"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_starmenu" />
+
+                        <ImageView
+                            android:id="@+id/starof3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_starmenu" />
+
+                        <ImageView
+                            android:id="@+id/starof4"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_starmenu" />
+
+                        <ImageView
+                            android:id="@+id/starof5"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_starmenu" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_danhgia_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anh"
+                android:layout_toRightOf="@id/anh"
+                android:text="23/09/2022 08:00"
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_danhgia_mota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_danhgia_time"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="70dp"
+                android:layout_toRightOf="@id/anh"
+                android:text="Size áo vừa vặn, chất vải co giãn"
+                android:textColor="#666666"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/txt_danhgia_image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt_danhgia_mota"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/anh"
+                android:src="@drawable/danhgia_image1" />
+
+            <ImageView
+                android:id="@+id/txt_danhgia_image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt_danhgia_mota"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/txt_danhgia_image1"
+                android:src="@drawable/danhgia_image2" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

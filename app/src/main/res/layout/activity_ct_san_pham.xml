@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietSanPhamActivity">
+
+
+    <ImageButton
+        android:id="@+id/btn_detail_trove"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bttron"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/bogoc"
+        android:text="Mua Hàng"
+        android:layout_below="@+id/img_detail_danhgia"/>
+
+
+    <ImageView
+        android:id="@+id/image_detail_product"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        app:srcCompat="@drawable/phu_kien_4" />
+
+
+    <TextView
+        android:id="@+id/txt_detail_gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_detail_product"
+        android:layout_marginLeft="60dp"
+
+        android:text="đ 79.000 - đ 89.000"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_gia"
+        android:layout_marginLeft="60dp"
+        android:text="Áo sweatshirt"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_detail_mota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_name"
+        android:layout_marginLeft="60dp"
+        android:text="Được thiết kế với họa tiết phong cách Giáng Sinh và màu sắc tươi sáng, áo sweatshirt thú cưng rất hợp thời trang, sành điệu và đáng yêu cho thú cưng của bạn khi mặc.Áo sweatshirt cho thú cưng được làm từ chất liệu lông cừu cao cấp.Sản phẩm có 7 size để bạn lựa chọn:  S, M, L, XL"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_mota"
+        android:layout_marginLeft="60dp"
+        android:text="Nhắn tin cho shop để được tư vấn kĩ hơn."
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/txt_detail_sizeS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="60dp"
+        android:text="Size:S,Chiều dài lưng:28cm/11,Cân nặng:2kg-3kg "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_sizeM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_sizeS"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Size:M,Chiều dài lưng:32cm/12.6,Cân nặng:3kg-4.5kg"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_sizeL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_sizeM"
+        android:layout_marginLeft="60dp"
+        android:text="Size:L,Chiều dài lưng:36cm/14.2,Cân nặng:4.5kg-6.5kg"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_sizeXL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_sizeL"
+        android:layout_marginLeft="60dp"
+        android:text="Size:XL,Chiều dài lưng:42cm/16.5,Cân nặng:6.5kg-9.5kg"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_sizeXL"
+        android:layout_marginLeft="60dp"
+        android:text="Kích thước:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_below="@+id/text9"
+        android:id="@+id/radio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio_1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radio_1"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/bogoc"
+            android:onClick="checkButton"
+            android:text="S" />
+        <RadioButton
+            android:layout_marginLeft="30dp"
+            android:onClick="checkButton"
+            android:id="@+id/radio_2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bogoc"
+            android:text="M" />
+        <RadioButton
+            android:onClick="checkButton"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/textView10"
+            android:id="@+id/radio_3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:background="@drawable/bogoc"
+            android:text="L" />
+        <RadioButton
+            android:onClick="checkButton"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/radio_4"
+            android:id="@+id/button7"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bogoc"
+            android:text="XL" />
+
+    </RadioGroup>
+
+    <TextView
+
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_btn"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:text="Số lượng:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_detail_tru"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radio_btn"
+        android:layout_marginLeft="160dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/txt_detail_soluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_btn"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="5dp"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_detail_cong"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radio_btn"
+        android:layout_marginLeft="280dp"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="18dp" />
+
+    <TextView
+
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:text="Đánh giá:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/txt_detail_sodanhgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textView13"
+        android:text="4,5"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_detail_danhgia"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView11"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/ic_star" />
+
+    <TextView
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView11"
+        android:id="@+id/textViewdanhgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(210+)" />
+
+    <Button
+        android:id="@+id/btn_detail_muahang"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txt_detail_sodanhgia"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="30dp"
+        android:text="Mua hàng" />
+
+    <Button
+        android:id="@+id/btn_detail_giohang"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txt_detail_sodanhgia"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Giỏ Hàng " />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu1"
+        android:title="menu"
+        app:showAsAction="always"
+        >
+        <menu>
+            <group  android:checkableBehavior ="single">
+                <item android:id="@+id/Home"
+                    android:title="Đơn hàng của tôi"
+                    android:icon="@drawable/ic_baseline_home_24"/>
+
+                <item android:id="@+id/Profile"
+                    android:title="Ví"
+                    android:icon="@drawable/ic_baseline_wallet_24"/>
+
+                <item android:id="@+id/danhgia"
+                    android:title="Đáng giá của tôi"
+                    android:icon="@drawable/ic_baseline_star_border_24"/>
+                <item android:id="@+id/ttcn"
+                    android:title="Thông tin cá nhân"
+                    android:icon="@drawable/ic_baseline_settings_24"/>
+                <item android:id="@+id/ttht"
+                    android:title="Trung tâm hộ trợ"
+                    android:icon="@drawable/ic_baseline_help_outline_24"/>
+                <item android:id="@+id/login"
+                    android:title="Đăng xuất"
+                    android:icon="@drawable/ic_baseline_login_24"/>
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

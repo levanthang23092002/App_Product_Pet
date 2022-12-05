@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">project_app_thu_cung</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="country_prompt">Chọn Tỉnh/Thành Phố</string>
+    <string-array name="country_arrays">
+        <item>Hà Nội</item>
+        <item>Huế</item>
+        <item>Sài Gòn</item>
+        <item>Đà Nẵng</item>
+        <item>Cần Thơ</item>
+    </string-array>
+
+    <string name="gioitinh">Chọn Giới Tính</string>
+    <string-array name="gt">
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Giới Tính Khác</item>
+
+    </string-array>
+    <string name="bank">Chọn Ngân Hàng</string>
+    <string-array name="bank_arrays">
+        <item>VietcomBank</item>
+        <item>BIDV</item>
+        <item>VBSP</item>
+        <item>Vietinbank</item>
+        <item>VN-AGribank</item>
+        <item>MHB</item>
+        <item>ABBank</item>
+        <item>Sacombank</item>
+        <item>Techcombank</item>
+        <item>ACB</item>
+
+
+    </string-array>
+    <string name="action_mes">Tin Nhắn</string>
+    <string name="action_cart">Giỏ Hàng</string>
+    <string name="action_note">Ví</string>
+    <string name="action_acc">Lịch Sử</string>
+</resources>

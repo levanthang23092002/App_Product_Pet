@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".ShoppingCartActivity">
+    <RelativeLayout
+        android:layout_weight="0.20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/id_comback_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="2dp"
+            android:padding="5dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Giỏ hàng"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:text="sửa" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_messes_box" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#EDE9E9"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lvGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="5.75"
+        android:background="#FFFFFF"
+        android:paddingTop="15dp"
+        tools:listitem="@layout/activity_item_shopping_cart">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:weightSum="2"
+        android:background="@drawable/boder_linearlayout"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <CheckBox
+                android:id="@+id/ck_tong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tất cả">
+
+
+            </CheckBox>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng thanh toán"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+            <Button
+                android:id="@+id/btn_muahang"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Mua hàng(0)"
+                android:gravity="center"
+                android:backgroundTint="#D85F9F"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:itemBackground="#fff"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/item_navbar"
+        app:itemTextColor="@color/item_navbar"
+        app:menu="@menu/bottom_nav"
+        />
+
+</LinearLayout>
